@@ -1,0 +1,7 @@
+SerialCommander KEYWORD1
+setPort           KEYWORD2
+read            KEYWORD2
+readTo          KEYWORD2
+available       KEYWORD2
+is              KEYWORD2
+confirm         KEYWORD2

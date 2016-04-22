@@ -1,0 +1,12 @@
+{
+  "name": "SerialCommander",
+  "keywords": "serial, prompt, interactive",
+  "description": "Arduino library to interactively receive commands over serial port",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/cristianszwarc/SerialCommander.git"
+  },
+  "frameworks": "arduino",
+  "platforms": "atmelavr"
+}
