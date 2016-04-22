@@ -14,11 +14,18 @@ When user activity is detected you can provide a welcome message to the user and
 
 A command is accepted when a new line is received (user press enter).
 
-The user input is ignored if is longer than expected or if longer than the command buffer.
+A timeout is in place to continue with code execution if the user does not answer.
+
+The user input is ignored if is longer than expected or longer than the command buffer.
 
 The received command can be compared to execute actions or can be used as input.
 
+It allows the user to ESC or CTRL+C to cancel and allow the code to continue before timeout.
+
+BACKSPACE is allowed to correct mistakes.
+
 **Install**
+
 [Download](https://github.com/cristianszwarc/SerialCommander/archive/master.zip) and decompress into your libraries folder.
 
 **Initialize**
