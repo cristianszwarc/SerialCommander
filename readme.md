@@ -9,6 +9,7 @@ This library allows you to react to user activity on the serial port and guide t
 ![Serial](terminal.gif)
 
 **Behaviour**
+
 When user activity is detected you can provide a welcome message to the user and wait for a command.
 
 A command is accepted when a new line is received (user press enter).
@@ -22,7 +23,7 @@ The received command can be compared to execute actions or can be used as input.
 
 **Initialize**
 
-```
+```C++
 #include <SerialCommander.h>			// Include library.
 
 SerialCommander MyCommander;			// Initialize an object to use.
@@ -37,7 +38,7 @@ void setup()
 
 **Detect user activity**
 
-```
+```C++
 void loop()
 {
 	...
@@ -65,7 +66,8 @@ void presentOptions()
 ```
 
 **Request input from user**
-```
+
+```C++
 	void conquerFunction() {
 	  char country[10]; 	// a buffer to store the input
 
@@ -85,7 +87,7 @@ void presentOptions()
 
 Confirm a command before execute an action.
 Note: this expects a ```__FlashStringHelper``` .
-```
+```C++
 	...
 	if (MyCommander.is("surrender") && MyCommander.confirm(F("Are you sure?")) {
 		// do something
@@ -94,9 +96,10 @@ Note: this expects a ```__FlashStringHelper``` .
 ```
 
 **Buffer Size**
+
 By default SerialCommander is set to read up to 30 characters plus a terminator.
 You can override this by:
-```
+```C++
 	...
 	#define SERIAL_COMMANDER_MAX_LENGTH 3
 	#include <SerialCommander.h>
