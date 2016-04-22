@@ -2,7 +2,7 @@
 Serial Commander
 -------------------------------
 
-Provide an interactive command line through Serial port on your Arduino / Platformio project.
+Provide an interactive command line through Serial port in your Arduino / Platformio project.
 
 This library allows you to react to user activity on the serial port and guide the user while accepting commands or values.
 
@@ -10,7 +10,7 @@ This library allows you to react to user activity on the serial port and guide t
 
 **Behaviour**
 
-When user activity is detected you can provide a welcome message to the user and wait for a command.
+When user activity is detected you can provide a welcome message and wait for a command.
 
 A command is accepted when a new line is received (user press enter).
 
