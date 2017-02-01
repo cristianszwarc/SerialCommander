@@ -24,9 +24,20 @@ It allows the user to ESC or CTRL+C to cancel and allow the code to continue bef
 
 BACKSPACE is allowed to correct mistakes.
 
-**Install**
+**Manual Installation**
 
 [Download](https://github.com/cristianszwarc/SerialCommander/archive/master.zip) and decompress into your libraries folder.
+
+**Platformio Installation**
+By command line: `platformio lib install 288`
+
+By platformio.ini:
+```
+...
+lib_deps =
+     SerialCommander
+...
+```
 
 **Initialize**
 
@@ -39,7 +50,7 @@ void setup()
 {
 	Serial.begin(9600);							// Initialize a serial port.
 	while (!Serial) { ; }
-	MyCommander.begin(&Serial);			// Set the serial port to use.
+	MyCommander.setPort(&Serial);			// Set the serial port to use.
 }
 ```
 
