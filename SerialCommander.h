@@ -6,9 +6,7 @@
 #ifndef SERIAL_COMMANDER
 #define SERIAL_COMMANDER
 
-#ifndef SERIAL_COMMANDER_MAX_LENGTH
 #define SERIAL_COMMANDER_MAX_LENGTH 30
-#endif
 
 #include <Arduino.h>
 

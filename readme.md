@@ -105,15 +105,14 @@ Note: this expects a ```__FlashStringHelper``` .
 **Buffer Size**
 
 By default SerialCommander is set to read up to 30 characters plus a terminator.
-You can override this by:
+You can override this by changing the line:
 ```C++
 	...
-	#define SERIAL_COMMANDER_MAX_LENGTH 3
-	#include <SerialCommander.h>
-	SerialCommander MyShorterCommander;
+	#define SERIAL_COMMANDER_MAX_LENGTH 30
 	...
 
 ```
+in `SerialCommander.h`
 
 **Methods**
 
